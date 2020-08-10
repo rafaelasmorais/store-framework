@@ -1,36 +1,52 @@
 {
   "store.home": {
     "blocks": [
-     "slider-layout#home"
+      "responsive-layout.desktop#desktop",
+      "responsive-layout.mobile#mobile"
     ]
   },
-  "slider-layout#home": {
-    "children": ["info-card#1", "info-card#2"],
+  "responsive-layout.desktop#desktop": {
+    "children": ["rich-text#desktop", "image#desktop"]
+  },
+  
+  "responsive-layout.mobile#mobile": {
+    "children": ["rich-text#mobile", "image#mobile"]
+  },
+  
+  "rich-text#desktop": {
     "props": {
-      "autoplay": {
-        "timeout": 5000,
-        "stopOnHover": false
-      }
+      "text": "# Your Coffee, Your Way \n ### New Coffee Makers Collection",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
     }
   },
-
-  "info-card#1": {
+  
+  "rich-text#mobile": {
     "props": {
-      "imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      "isFullModeStyle": true,
-      "headline": "Black Friday",
-      "callToActionText": "Subscribe",
-      "textPosition": "center"
+      "text": "### Your Coffee, Your Way \n #### New Coffee Makers Collection",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
     }
   },
-
-  "info-card#2": {
+  "image#desktop": {
     "props": {
-      "imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      "isFullModeStyle": true,
-      "headline": "Black Friday",
-      "callToActionText": "Subscribe",
-      "textPosition": "center"
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Desktop.jpg?q=1",
+      "isFullWidth":true,
+      "link": {
+        "url": "/small-appliances/coffee-makers"
+      } ,
+      "alt": "Coffee Makers Collection"
+    }
+  },
+  
+  "image#mobile": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Mobile.jpg?q=1",
+      "isFullWidth":true,
+      "link": {
+        "url": "/small-appliances/coffee-makers"
+      } ,
+      "alt": "Coffee Makers Collection"
     }
   }
 }
