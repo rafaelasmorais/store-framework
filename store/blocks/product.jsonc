@@ -26,6 +26,7 @@
       "product-price",
       "flex-layout.row#qty-sku",
       "flex-layout.col#right.",
+      "shipping-simulator",
       "buy-button"
     ],
     
