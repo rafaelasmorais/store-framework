@@ -52,9 +52,9 @@
     },
     "iframe": {
         "props": {
-          "src": "http://someURL.com/resource",
-          "width": 100,
-          "height": 200
+          "src": "https://www.instagram.com/p/B973Qp8BacC/embed",
+          "width": 800,
+          "height": 1000
         }
       },
     "rich-text#home1": {
